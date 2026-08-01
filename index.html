@@ -4,6 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cambrian Charter</title>
+  <meta name="description" content="Cambrian Charter is designing and building spherical autonomous marine rovers for climate, geological, and acoustic data collection.">
+
+  <!-- Browser tab icon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Link previews (Open Graph: iMessage, Discord, Slack, Signal, WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cambriancharter.github.io/">
+  <meta property="og:title" content="Cambrian Charter">
+  <meta property="og:description" content="A marine AUV project — spherical autonomous rovers for climate, geological, and acoustic data collection.">
+  <meta property="og:image" content="https://cambriancharter.github.io/wireframe_hidden_edges.png">
+  <meta property="og:image:width" content="1799">
+  <meta property="og:image:height" content="1012">
+  <meta property="og:image:alt" content="Wireframe schematic">
+  <meta property="og:site_name" content="Cambrian Charter">
+
+  <!-- Link previews (Twitter/X) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cambrian Charter">
+  <meta name="twitter:description" content="A marine AUV project — spherical autonomous rovers for climate, geological, and acoustic data collection.">
+  <meta name="twitter:image" content="https://cambriancharter.github.io/wireframe_hidden_edges.png">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +38,7 @@
       <h2>Description</h2>
       <div class="description-content">
         <div class="description-text">
-          <p>Designing and building spherical autonomous marine rovers for data collection, focussing on:</p>
+          <p>Cambrian Charter is designing and building spherical autonomous marine rovers for data collection, focusing on:</p>
           <ul>
             <li><strong>Climate data</strong>
               <ul>
@@ -29,22 +52,63 @@
               <ul>
                 <li>Topology</li>
                 <li>Bathymetry</li>
-                <li>Geomagnetic field</li>
-                <li>Local magnetic field interaction</li>
+                <li>Geomagnetism</li>
+                <li>Local magnetic field interactions</li>
               </ul>
             </li>
-            <li><strong>Sonic data</strong>
+            <li><strong>Acoustic data</strong>
               <ul>
-                <li>Ultrasonic object detection</li>
-                <li>Ambient hydrophonic acoustics analysis</li>
+                <li>Ultrasonic signatures</li>
+                <li>Ambient hydrophonics</li>
               </ul>
             </li>
           </ul>
         </div>
        <figure class="description-figure">
         <img src="wireframe_hidden_edges.png" alt="Wireframe schematic">
-        <figcaption>v0-7 wireframe model. Exported from Fusion 360.</figcaption>
+        <figcaption>v0-8 CAD model in wireframe. Exported from Fusion 360.</figcaption>
       </figure>
+      </div>
+    </section>
+
+    <section class="commercial-potential">
+      <h2>Commercial Potential</h2>
+      <p>The active autonomous machinesm, paired with cutting-edge proprietary data processing, open potential across a wide-range of commercial applications:</p>
+      <div class="sectors">
+        <div class="sector">
+          <h3>Research</h3>
+          <ul>
+            <li>Climatological research</li>
+            <li>Marine biology research</li>
+            <li>Marine geological research</li>
+            <li>Meteorology</li>
+          </ul>
+        </div>
+        <div class="sector">
+          <h3>Energy &amp; Resources</h3>
+          <ul>
+            <li>Oil and gas surveying</li>
+            <li>Oil and gas infrastructure inspection</li>
+            <li>Oil and gas infrastructure support</li>
+            <li>Deep-sea mining operational support</li>
+          </ul>
+        </div>
+        <div class="sector">
+          <h3>Commerce &amp; Defence</h3>
+          <ul>
+            <li>Maritime trade tracking data</li>
+            <li>Maritime trade quantitative data</li>
+            <li>Maritime defence</li>
+          </ul>
+        </div>
+        <div class="sector">
+          <h3>Survey &amp; Frontier</h3>
+          <ul>
+            <li>Deep-sea surveying</li>
+            <li>Disaster prediction and early warning</li>
+            <li>Off-world exploration and operations</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -61,10 +125,81 @@
       </div>
     </section>
 
-    <section class="roadmap">
+  <section class="roadmap">
       <h2>Roadmap</h2>
       <details>
-        <summary>Expand</summary>  
+        <summary>Hardware</summary>
+        <p>The hardware includes all the sensors, driving circuitry, computational chips, and the electro-mechanical drive assembly. For now, the hull is elevated to its own status outside of the general hardware designation.</p>
+        <ul>
+          <li class="version done">
+            <label><input type="checkbox" disabled><span class="version-label">v0-0</span></label>
+            <ul>
+              <li><label><input type="checkbox" checked disabled> Conception of design</label></li>
+              <li><label><input type="checkbox" disabled> Individual component bench testing</label></li>
+              <ul>
+                <li><label><input type="checkbox" checked disabled> TB6612FNG motor driver + N20 gear motor</label></li>
+                <li><label><input type="checkbox" checked disabled> MPU6050 accelerometer</label></li>
+                <li><label><input type="checkbox" checked disabled> JSM-SR04T ultrasonic transducer</label></li>
+                <li><label><input type="checkbox" disabled>NRF24L01 radio frequency transciever</label></li>
+                <li><label><input type="checkbox" disabled>18650 lithium-ion cell</label></li>
+                <li><label><input type="checkbox" disabled>DYW-LS-03A ultrasonic transducer</label></li>
+              </ul>
+            </ul>
+          </li>
+          
+          <li class="version done">
+            <label><input type="checkbox" disabled><span class="version-label">v0-1</span></label>
+            <ul>
+              <li><label><input type="checkbox" checked disabled> Cybernetic system architecture</label></li>
+              <li><label><input type="checkbox" checked disabled> CAD designs (concrete core)</label></li>
+              <li><label><input type="checkbox" checked disabled> CAD designs (drive assembly)</label></li>
+              <li><label><input type="checkbox" disabled> CAD designs (circuit diagrams)</label></li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>Software</summary>
+        <p>The software will perform the sophisticated autonomous control, AI, data-processing, mathematical-statistical algorithms, data handling, power management, and communications. This will form an internal ecosystem of interconnected subsystems according to cybernetic theory.</p>
+        <ul>
+          <li class="version done">
+            <label><input type="checkbox" disabled><span class="version-label">v0-0</span></label>
+            <ul>
+              <li><label><input type="checkbox" checked disabled> Conception of design</label></li>
+              <li><label><input type="checkbox" disabled> Individual component MicroPython programming</label></li>
+              <ul>
+                <li><label><input type="checkbox" checked disabled> TB6612FNG motor driver + N20 gear motor</label></li>
+                <li><label><input type="checkbox" checked disabled> MPU6050 accelerometer</label></li>
+                <li><label><input type="checkbox" checked disabled> JSM-SR04T ultrasonic transducer</label></li>
+                <li><label><input type="checkbox" disabled>NRF24L01 radio frequency transciever</label></li>
+                <li><label><input type="checkbox" disabled>18650 lithium-ion cell</label></li>
+                <li><label><input type="checkbox" disabled>DYW-LS-03A ultrasonic transducer</label></li>
+              </ul>
+            </ul>
+          </li>
+          
+          <li class="version done">
+            <label><input type="checkbox" disabled><span class="version-label">v0-1</span></label>
+            <ul>
+              <li>
+                <label><input type="checkbox" disabled> Autonomous Control Engine</label>
+                <ul>
+                  <li><label><input type="checkbox" disabled> Communications layer</label></li>
+                  <li><label><input type="checkbox" disabled> Orchastrative control system</label></li>
+                  <li><label><input type="checkbox" disabled> Energy and battery management system</label></li>
+                  <li><label><input type="checkbox" disabled> Data layer</label></li>
+                  <li><label><input type="checkbox" disabled> AI subsystem</label></li>
+                  <li><label><input type="checkbox" disabled> Statistical sensor fusion and filtering algorithm</label></li>
+                </ul>
+              </li>
+              <li><label><input type="checkbox" checked disabled> State machine skeleton</label></li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>Printed Hull</summary>  
+        <p>The printed hull is arguably the most critical design component of the entire venture. Even without anything else, this would allow some level of machine to reach depths.</p>
         <ul>
           <li class="version done">
             <label><input type="checkbox" checked disabled><span class="version-label">v0-0</span></label>
@@ -172,7 +307,15 @@
         </ul>
       </details>
     </section>
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        This project began as a dedicated engineering challenge, founded by a quantitative analyst with a mathematical-statistical and actuarial background, proficiency in programming, and dedicated interest in science and technology.
+        The venture is still in an early pre-revenue phase, as a working prototype is under active development. As such, the state of operations would fall under research and development.
+      </p>
+    </section>
     <footer>
+      <h3>Contact</h3>
       <a href="mailto:cambriancharter@gmail.com">cambriancharter@gmail.com</a>
     </footer>
   </main>

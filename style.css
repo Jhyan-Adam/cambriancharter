@@ -82,6 +82,32 @@ ul ul { padding-left: 1.75rem; margin-top: 0.25rem; }
 @media (max-width: 600px) {
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
+.commercial-potential > p { color: #bbb; margin: 0 0 1.5rem; }
+.commercial-potential .sectors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem 2.5rem;
+}
+.commercial-potential .sector h3 {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #FF6700;
+  margin: 0 0 0.5rem;
+}
+.commercial-potential .sector ul {
+  border-left: 1px solid #2a2a2a;
+  padding-left: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.commercial-potential .sector li { color: #bbb; font-size: 0.93rem; line-height: 1.45; }
+@media (max-width: 600px) {
+  .commercial-potential .sectors { grid-template-columns: 1fr; }
+}
 .roadmap .version { margin-bottom: 0.6rem; }
 .roadmap .version-label {
   font-family: "SF Mono", Menlo, Consolas, monospace;
@@ -90,10 +116,21 @@ ul ul { padding-left: 1.75rem; margin-top: 0.25rem; }
 .roadmap .done .version-label { color: #666; }
 .roadmap .pending .version-label { color: #e8e8e8; }
 .roadmap input[type="checkbox"] {
-  accent-color: #FF6700;
+  appearance: none;
+  -webkit-appearance: none;   /* Safari < 15.4 */
+  width: 0.85em;
+  height: 0.85em;
+  border: 1px solid #FF6700;
+  border-radius: 3px;
+  background: transparent;
   margin-right: 0.6rem;
-  transform: translateY(1px);
+  vertical-align: -0.06em;
   cursor: default;
+  opacity: 1;                 /* Safari dims disabled inputs otherwise */
+}
+.roadmap input[type="checkbox"]:checked {
+  background: #FF6700;
+  border-color: #FF6700;
 }
 .roadmap li { padding: 0.12rem 0; }
 .roadmap li li { color: #999; font-size: 0.95rem; }
